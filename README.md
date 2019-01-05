@@ -28,40 +28,34 @@ Stop_Word : stop words as per NLTK.
 Word : A token that is not a stop_word
 Features:
 
-cwc_min : Ratio of common_word_count to min lenghth of word count of Q1 and Q2 
-cwc_min = common_word_count / (min(len(q1_words), len(q2_words))
+**cwc_min** : Ratio of common_word_count to min lenghth of word count of Q1 and Q2 
+**cwc_min** = common_word_count / (min(len(q1_words), len(q2_words))
 
-cwc_max : Ratio of common_word_count to max lenghth of word count of Q1 and Q2 
-cwc_max = common_word_count / (max(len(q1_words), len(q2_words))
+**cwc_max** : Ratio of common_word_count to max lenghth of word count of Q1 and Q2 
+**cwc_max** = common_word_count / (max(len(q1_words), len(q2_words))
 
-csc_min : Ratio of common_stop_count to min lenghth of stop count of Q1 and Q2 
-csc_min = common_stop_count / (min(len(q1_stops), len(q2_stops))
+**csc_min** : Ratio of common_stop_count to min lenghth of stop count of Q1 and Q2 
+**csc_min** = common_stop_count / (min(len(q1_stops), len(q2_stops))
 
-csc_max : Ratio of common_stop_count to max lenghth of stop count of Q1 and Q2
-csc_max = common_stop_count / (max(len(q1_stops), len(q2_stops))
+**csc_max** : Ratio of common_stop_count to max lenghth of stop count of Q1 and Q2
+**csc_max** = common_stop_count / (max(len(q1_stops), len(q2_stops))
 
-ctc_min : Ratio of common_token_count to min lenghth of token count of Q1 and Q2
-ctc_min = common_token_count / (min(len(q1_tokens), len(q2_tokens))
+**ctc_min** : Ratio of common_token_count to min lenghth of token count of Q1 and Q2
+**ctc_min** = common_token_count / (min(len(q1_tokens), len(q2_tokens))
 
+**ctc_max** : Ratio of common_token_count to max lenghth of token count of Q1 and Q2
+**ctc_max** = common_token_count / (max(len(q1_tokens), len(q2_tokens))
 
+**last_word_eq** : Check if First word of both questions is equal or not
+**last_word_eq** = int(q1_tokens[-1] == q2_tokens[-1])
 
-ctc_max : Ratio of common_token_count to max lenghth of token count of Q1 and Q2
-ctc_max = common_token_count / (max(len(q1_tokens), len(q2_tokens))
-
-
-
-last_word_eq : Check if First word of both questions is equal or not
-last_word_eq = int(q1_tokens[-1] == q2_tokens[-1])
-
-
-
-first_word_eq : Check if First word of both questions is equal or not
-first_word_eq = int(q1_tokens[0] == q2_tokens[0])
+**first_word_eq** : Check if First word of both questions is equal or not
+**first_word_eq** = int(q1_tokens[0] == q2_tokens[0])
 
 
 
-abs_len_diff : Abs. length difference
-abs_len_diff = abs(len(q1_tokens) - len(q2_tokens))
+**abs_len_diff** : Abs. length difference
+**abs_len_diff** = abs(len(q1_tokens) - len(q2_tokens))
 
 
 
